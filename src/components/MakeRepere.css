@@ -1,0 +1,178 @@
+.contentMap{
+    display: flex;
+    justify-content: center;
+}
+
+.leaflet-container {
+    height: 100vh;
+    width: 100%;
+}
+
+.takeAdress{
+    z-index: 2;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 20px;
+    width: 230px;
+    font-size: 1rem;
+}
+
+.contentAdress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 5;
+}
+
+.resultAdress{
+    text-align: center;
+    width: 220px;
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 2;
+    margin:0;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.contentResult{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    z-index: 450;
+    border-radius: 5px;
+    margin-top: 35px;
+}
+
+.searchAdress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 2%;
+    margin-right: 20px;
+    position: absolute;
+    z-index: 451;
+}
+
+.buttonSearchAdress{
+    background-color: white;
+    border: 2px solid black;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 27px;
+    width: 70px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.iconWaze{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: 455;
+    margin-top : 145%;
+    margin-left: 32%;
+    border: rgb(0, 188, 235) 4px solid;
+    box-shadow: 1px 1px 5px rgb(0, 136, 170);
+    background-image: url('./image/iconWaze.png');
+    background-size: 100%;
+    background-position: cover;
+}
+
+.leaflet-marker-icon .leaflet-zoom-animated .leaflet-interactive{
+    background-color: rgb(255, 255, 255);
+}
+
+.contentMapping .leaflet-marker-icon{
+    content: url("./image/markerIcon.png");
+    width: 50px !important;
+    height: auto !important;
+    left: -15px !important;
+    top: -17px !important;
+    height: 50px;
+}
+
+.markerEnd{
+    background-image: url("./image/markerEnd.png") !important;
+}
+
+.validPos{
+    position: absolute;
+    height: 50px;
+    background-color: rgb(74, 209, 103);
+    width: 150px;
+    border-radius: 15px;
+    z-index: 455;
+    font-weight: bold;
+    font-weight: 20px;
+    border: 2px rgb(27, 155, 55) solid;
+}
+
+.enterAdressMapClient{
+    height: 50px;
+    width: 170px;
+    border-radius: 15px;
+    padding: 10px;
+    z-index: 465;
+    border: 2px rgb(0, 0, 0) solid;
+}
+
+.validAdressMapClient{
+    height: 50px;
+    background-color: rgb(74, 209, 103);
+    width: 70px;
+    border-radius: 15px;
+    margin-left: 5px;
+    z-index: 465;
+    font-weight: bold;
+    font-weight: 20px1;
+    border: 2px rgb(27, 155, 55) solid;
+}
+
+.divEnterAdressMapClient{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 465;
+    height: 100px;
+    width: 300px;
+    margin-top: 145%;
+}
+
+.messageMap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    z-index: 455;
+    width: 140%;
+    height: 100px;
+    opacity: 0%;
+    bottom: 300px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: white;
+    margin-left: 600px;
+    animation: messageApp 7s;
+}
+
+@keyframes messageApp{
+    0% {
+        opacity: 100%;
+        margin-left: 0;
+    }
+    55%{
+        margin-left: 0;
+    }
+    100% {
+        opacity: 0%;
+        margin-left: 600px
+    }
+}
